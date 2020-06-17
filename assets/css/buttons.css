@@ -1,0 +1,41 @@
+.button {
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+}
+
+.button:hover {
+    background-color: darkblue;
+}
+
+.button:active {
+    background-color: lightblue;
+    transform: translateY(4px);
+}
+
+.wechat {
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+}
+
+.wechat:hover {
+    background-color: lightgreen;
+}
+
+.wechat:active {
+    background-color: greenyellow;
+    transform: translateY(4px);
+}
