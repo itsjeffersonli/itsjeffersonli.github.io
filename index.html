@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .button {
+        padding: 15px 15px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: white;
+        background-color: blue;
+        border: none;
+        border-radius: 15px;
+    }
+    
+    .button:hover {
+        background-color: darkblue;
+    }
+    
+    .button:active {
+        background-color: lightblue;
+        transform: translateY(4px);
+    }
+</style>
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +29,6 @@
 
     <title>John Jefferson Li</title>
     <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/favicon.png" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -19,24 +40,21 @@
 </head>
 
 <body>
-
     <!-- ======= Mobile nav toggle button ======= -->
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
     <!-- ======= Header ======= -->
     <header id="header">
         <div class="d-flex flex-column">
-
             <div class="profile">
                 <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html">John Jefferson Li</a></h1>
+                <h1 class="text-light" style="font-family:Arial, Helvetica, sans-serif"><a href="index.html">John Jefferson Li</a></h1>
                 <div class="social-links mt-3 text-center">
                     <a href="https://twitter.com/itsjeffersonli" class="twitter"><i class="bx bxl-twitter"></i></a>
                     <a href="https://www.facebook.com/itsjeffersonli" class="facebook"><i class="bx bxl-facebook"></i></a>
                     <a href="https://www.instagram.com/itsjeffersonli/" class="instagram"><i class="bx bxl-instagram"></i></a>
                     <a href="https://github.com/itsjeffersonli" class="github"><i class="bx bxl-github"></i></a>
                     <a href="mailto:2542067802@qq.com"><i class="fab fa-qq"></i></a>
-
                 </div>
             </div>
 
@@ -44,8 +62,10 @@
                 <ul>
                     <li class="active"><a href="index.html"><i class="bx bx-home"></i><span>Home</span></a></li>
                     <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+                    <li><a href="#education"><i class="fa fa-graduation-cap"></i><span>Education</span></a></li>
+                    <li><a href="#skill"><i class="fa fa-flask"></i><span>Skills</span></a></li>
+                    <li><a href="#certifications"><i class="fa fa-certificate"></i><span>Certifications</span></a></li>
                     <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
                 </ul>
             </nav>
             <!-- .nav-menu -->
@@ -59,20 +79,19 @@
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="hero-container" data-aos="fade-in">
             <h1>John Jefferson Li</h1>
-            <p>I'm a <span class="typed" data-typed-items="Pentester,CTF Player, Bug Bounty,Front End Developer"></span></p>
+            <p><span class="typed" data-typed-items="Pentester,CTF Player, Bug Bounty,Front End Developer"></span></p>
         </div>
     </section>
     <!-- End Hero -->
 
     <main id="main">
-
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="about section-bg">
             <div class="container">
 
                 <div class="section-title">
                     <h2>About</h2>
-                    <p>Hi I'm John Jefferson Li a Student , Manager and Consultant at Rootless(Hack The Box Team),Pentester and a Web Developer</p>
+                    <p>Hi I'm John Jefferson Li a Student ,Consultant, Bug Bounty,Pentester and a Web Developer</p>
                 </div>
 
                 <div class="row">
@@ -90,20 +109,22 @@
                                     <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 24 October 1999</li>
                                     <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +63 917 869 3896</li>
                                     <li><i class="icofont-rounded-right"></i> <strong>City:</strong>Quezon City, Philippines</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 20</li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul>
                                     <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Student</li>
                                     <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> lijohnjefferson@gmail.com</li>
-                                    <li><i class="icofont-rounded-right"></i> <strong>Favorite Challenge:</strong> Cryptograhpy</li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 20</li>
                                 </ul>
                             </div>
                         </div>
                         <p>
-                            Currently Pursuing Information Systems Major in Information Security at College Of Saint Benilde Manila ,Philippines.
+                            Currently Pursuing Information Systems Major in Information Security at College Of Saint Benilde Manila, Philippines.
                         </p>
+                        <a href="https://www.hackthebox.eu/profile/223654"><img src="http://www.hackthebox.eu/badge/image/223654" alt="Hack The Box"></a>
+                        <a href="/assets/file/resume.pdf"><button class="button">Get My Resume</button></a>
+
                     </div>
                 </div>
 
@@ -111,30 +132,31 @@
         </section>
         <!-- End About Section -->
 
-        <!-- ======= Facts Section ======= -->
-        <section id="facts" class="facts">
+        <!-- ======= Education Section ======= -->
+        <section id="education" class="facts section-bg">
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Facts</h2>
+                    <h2>Education</h2>
                 </div>
 
                 <div class="row no-gutters">
 
                     <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-                        <div class="count-box">
-                            <a href="https://www.hackthebox.eu/profile/223654"><img src="http://www.hackthebox.eu/badge/image/223654" alt="Hack The Box"></a>
-                            <a href="https://www.hackthebox.eu/profile/223654">Currently in Top 100</a>
+                        <div class="info">
+                            <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">College</h3>
+                            <span style="text-align: center;">De LaSalle College of Saint Benilde</span>
+                            <span style="font-style: italic;">Currently Enrolled</span>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="count-box">
-                            <i class="icofont-document-folder"></i>
-                            <span data-toggle="counter-up">2</span>
-                            <strong>Projects</strong>
-                            <strong><a href="https://bibchur-finals.github.io/">Suicide Prevention</a></strong>
-                            <strong><a href="http://www.rootless-ctf.rf.gd/">Rootless Team Website</a></strong>
+                </div>
+                <br>
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                        <div class="info">
+                            <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">High School</h3>
+                            <span style="text-align: center;">Philippine Institute of Quezon City</span>
+                            <span style="font-style: italic;">High School Diploma 2019</span>
                         </div>
                     </div>
                 </div>
@@ -204,7 +226,7 @@
             </div>
         </section>
         <!-- End Skills Section -->
-        <section id="contact" class="contact">
+        <section id="certifications" class="contact section-bg">
             <div class="container">
 
                 <div class="section-title">
@@ -214,35 +236,44 @@
                     <div class="col-lg-6 ">
                         <div class="info">
                             <div class="certificates">
-                                <a href="https://www.e-studyportal.com/eco_certificate.php?id=127">
+                                <a href="/assets/img/CEH.png">
                                     <h4 style="text-align: center; color:blue">Certified Ethical Hacker</h4>
-                                    <h4 style="text-align: center; color: blue">(eStudy Academy)</h4>
-                                    <img src="assets/img/CEH.png" alt="CEH" height="255" width="500">
+                                    <h4 style="text-align: center; color: blue">Study365</h4>
                                 </a>
+                                <p style="text-align: center; color:black">Issued: Dec. 2019</p>
                             </div>
                         </div>
                     </div>
-
-                    </br>
                     <div class="col-lg-6">
                         <div class="info">
                             <div class="certificates">
-                                <h4 style="color: blue; text-align: center;">CodeStack Native to FullStack</h4>
-                                <h4 style="color: blue; text-align: center;"> Hybrid Development</h4>
-                                <img src="assets/img/CODESTACK.jpg" alt="codestack" height="255" width="500">
+                                <a href="/assets/img/CODESTACK.jpg">
+                                    <h4 style="color: blue; text-align: center;">Native to FullStack Development</h4>
+                                    <h4 style="color: blue; text-align: center;">Code Stack PH</h4>
+                                </a>
+                                <p style="text-align: center; color:black">Issued: Feb. 2020</p>
                             </div>
                         </div>
                     </div>
-                    <br>
-
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" style="margin-top: 20px;">
+                        <div class="info">
+                            <div class="certificates">
+                                <a href="info">
+                                    <h4 style="color: blue; text-align: center; ">Penetration Testing with Ethical Hacking</h4>
+                                    <h4 style="color: blue; text-align: center; ">Nexus IT Traning center</h4>
+                                </a>
+                                <p style="text-align: center; color:black ">Issued: Nov. 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="margin-top: 20px;">
                         <div class="info">
                             <div class="certificates">
                                 <a href="https://www.credential.net/ce2f619d-c6a5-4b60-989a-42c395d00ef4">
                                     <h4 style="color: blue; text-align: center;">Certified Network Security Specialist</h4>
-                                    <h4 style="color: blue; text-align: center;"> ICSI | CNSS </h4>
-                                    <img src="assets/img/CNSS-1.jpg" alt="CNSS" height="255" width="500">
+                                    <h4 style="color: blue; text-align: center;">ICSI</h4>
                                 </a>
+                                <p style="text-align: center; color:black">Issued: May 2020</p>
                             </div>
                         </div>
                     </div>
@@ -250,44 +281,44 @@
             </div>
         </section>
         <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact">
-            <div class="container">
+        <section id="contact" class="contact section-bg">
+            <div class="container ">
 
-                <div class="section-title">
+                <div class="section-title ">
                     <h2>Contact</h2>
                 </div>
 
-                <div class="row" data-aos="fade-in">
-                    <div class="col-lg-8 d-flex align-items-stretch">
-                        <div class="info">
+                <div class="row " data-aos="fade-in ">
+                    <div class="col-lg-8 d-flex align-items-stretch ">
+                        <div class="info ">
 
-                            <div class="email">
-                                <a href="mailto:lijohnjefferson@gmail.com"><i class="icofont-envelope"></i></a>
+                            <div class="email ">
+                                <a href="mailto:lijohnjefferson@gmail.com "><i class="icofont-envelope "></i></a>
                                 <h4>Email:</h4>
                                 <p>lijohnjefferson@gmail.com</p>
                             </div>
-                            <div class="email">
-                                <a href="mailto:2542067802@qq.com"><i class="fab fa-qq"></i></a>
+                            <div class="email ">
+                                <a href="mailto:2542067802@qq.com "><i class="fab fa-qq "></i></a>
                                 <h4>Email:</h4>
                                 <p>2542067802@qq.com</p>
                             </div>
-                            <div class="email">
-                                <a href="https://github.com/itsjeffersonli"><i class="icofont-github"></i></a>
+                            <div class="email ">
+                                <a href="https://github.com/itsjeffersonli "><i class="icofont-github "></i></a>
                                 <h4>Github:</h4>
                                 <p>itsjeffersonli</p>
                             </div>
-                            <div class="phone">
-                                <i class="icofont-phone"></i>
+                            <div class="phone ">
+                                <i class="icofont-phone "></i>
                                 <h4>Call:</h4>
                                 <p>+63 917 869 3896</p>
                             </div>
                             <h6>Can you support me for my OSCP Exam</h6>
-                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                <input type="hidden" name="cmd" value="_donations" />
-                                <input type="hidden" name="business" value="QTRKEZCX3YMQS" />
-                                <input type="hidden" name="currency_code" value="USD" />
-                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                                <img alt="" border="0" src="https://www.paypal.com/en_PH/i/scr/pixel.gif" width="1" height="1" />
+                            <form action="https://www.paypal.com/cgi-bin/webscr " method="post " target="_top ">
+                                <input type="hidden " name="cmd " value="_donations " />
+                                <input type="hidden " name="business " value="QTRKEZCX3YMQS " />
+                                <input type="hidden " name="currency_code " value="USD " />
+                                <input type="image " src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif " border="0 " name="submit " title="PayPal - The safer, easier way to pay online! " alt="Donate with PayPal button " />
+                                <img alt=" " border="0 " src="https://www.paypal.com/en_PH/i/scr/pixel.gif " width="1 " height="1 " />
                             </form>
                         </div>
                     </div>
@@ -297,20 +328,20 @@
 
     </main>
 
-    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+    <a href="# " class="back-to-top "><i class="icofont-simple-up "></i></a>
 
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/9474eacc32.js" crossorigin="anonymous"></script>
-    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counterup/counterup.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/jquery/jquery.min.js "></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="https://kit.fontawesome.com/9474eacc32.js " crossorigin="anonymous "></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js "></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js "></script>
+    <script src="assets/vendor/counterup/counterup.min.js "></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
+    <script src="assets/vendor/venobox/venobox.min.js "></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js "></script>
+    <script src="assets/vendor/typed.js/typed.min.js "></script>
+    <script src="assets/vendor/aos/aos.js "></script>
+    <script src="assets/js/main.js "></script>
 
 </body>
 
