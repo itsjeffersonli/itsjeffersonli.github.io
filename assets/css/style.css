@@ -57,6 +57,16 @@ h6 {
     transition: background 0.2s ease-in-out;
 }
 
+.hamdog:hover {
+    color: lightblue;
+    font-size: larger;
+}
+
+.shabs:hover {
+    color: #ed3c0d;
+    font-size: larger;
+}
+
 
 /*--------------------------------------------------------------
 # Header
