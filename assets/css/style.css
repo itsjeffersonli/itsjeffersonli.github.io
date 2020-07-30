@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    color: lightblue;
+    color: darkblue;
 }
 
 a:hover {
@@ -23,6 +23,15 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
+}
+
+.certificate {
+    text-align: center;
+    color: black;
+}
+
+hover-effect:hover {
+    color: #122f57;
 }
 
 
@@ -59,7 +68,7 @@ h6 {
 
 .hamdog:hover {
     color: lightblue;
-    font-size: larger;
+    font-weight: bold;
 }
 
 .shabs:hover {
